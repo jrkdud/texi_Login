@@ -13,9 +13,9 @@
         android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
         android:text="회원가입"
-        app:layout_constraintEnd_toEndOf="@+id/signup_carnumber"
-        app:layout_constraintStart_toStartOf="@+id/signup_carnumber"
-        app:layout_constraintTop_toBottomOf="@+id/signup_carnumber" />
+        app:layout_constraintEnd_toEndOf="@+id/signup_pw"
+        app:layout_constraintStart_toStartOf="@+id/signup_pw"
+        app:layout_constraintTop_toBottomOf="@+id/signup_pw" />
 
     <EditText
         android:id="@+id/signup_name"
@@ -32,6 +32,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/signup_carnumber"
+        app:layout_constraintStart_toStartOf="@+id/signup_carnumber"
+        app:layout_constraintTop_toBottomOf="@+id/signup_carnumber" />
+
+    <EditText
+        android:id="@+id/signup_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/signup_id"
+        app:layout_constraintStart_toStartOf="@+id/signup_id"
+        app:layout_constraintTop_toBottomOf="@+id/signup_id" />
+
+    <EditText
         android:id="@+id/signup_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,9 +69,9 @@
         android:ems="10"
         android:hint="전화번호"
         android:inputType="textPhonetic"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signup_name"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/signup_name"
         app:layout_constraintTop_toBottomOf="@+id/signup_name" />
 
     <EditText
@@ -56,9 +84,9 @@
         android:ems="10"
         android:hint="차량번호"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signup_phone"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/signup_phone"
         app:layout_constraintTop_toBottomOf="@+id/signup_phone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
